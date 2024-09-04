@@ -100,7 +100,7 @@
 
         <section id="contact">
             <h2>Let's Grow Together</h2>
-            <form id="lead-gen-form">
+            <form id="lead-gen-form" action="https://formspree.io/f/xblrboyk" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -128,8 +128,6 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
-
-        <!-- Add testimonials throughout the page -->
     </main>
 
     <footer>
@@ -156,6 +154,9 @@
             event.preventDefault();
             // Add form submission logic here
             console.log('Form submitted');
+                        // You can add additional client-side validation here if needed
+            // Submit the form
+            event.target.submit();
         });
     </script>
 </body>
